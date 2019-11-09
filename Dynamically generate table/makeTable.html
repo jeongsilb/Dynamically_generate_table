@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>JSTable</title>
+        <link href="makeTable.css" rel="stylesheet" type="text/css">
+        <script src="makeTable.js"></script>	
+</head> 
+
+<body>
+<div id="allpage"> 
+		
+		<div class="centerize">
+				<br/>
+			<b>Dynamically generate table</b>
+			<br/>
+			<br/>
+				<label>Rows&nbsp;&nbsp;&nbsp;&nbsp;Cols </label><br/>
+			
+
+				<label><input type="text" name="rows" id="rows"/>&nbsp;X&nbsp;<input type="text" name="cols" id="cols"/></label>
+				<br/><br/>
+				<input class="but" name="generate" type="button" value="Create Table!" onclick='createTable();'/><br/><br/>
+				<button class="but" onclick="deletionFunction()">Reload the table!</button>
+			</div>
+			<br/>
+				<div class="centerize" id="wrapper"></div><br/><br/>
+</div> 
+<footer>
+		<h6><b id="copyright">&copy;Copyright Jeongsil Baek</b></h6>
+</footer>		
+</body>
+</html>
